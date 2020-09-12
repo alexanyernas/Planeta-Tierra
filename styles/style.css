@@ -1,0 +1,49 @@
+html,body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: -webkit-radial-gradient(#2A7079 10%,#173C41 25%,#0C1F22 80%);
+	color: #eee;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.clouds {
+	width: 220px; height: 220px;
+	position: absolute;
+	top: 0; bottom: 0;
+	right: 0; left: 0;
+	margin: auto;
+}
+
+.clouds img {
+	position: relative;
+	z-index: 20;
+}
+
+.hearth {
+	width: 200px; height: 200px;
+	position: absolute;
+	top: 0; bottom: 0;
+	right: 0; left: 0;
+	margin: auto;
+	border-radius: 50%;
+	box-shadow: -30px -30px 0 -10px rgba(0,0,0,.15) inset,
+	-60px -20px 0 0 rgba(0,0,0,.1) inset,
+	5px 5px 0 0 rgba(255,255,255,.2) inset;
+	background: url(../img/map.png);
+	background-size: cover;
+	-webkit-animation: effect 5s infinite linear;
+}
+
+@-webkit-keyframes effect {
+	from {
+		background-position: 0 center;
+	}
+
+	to {
+		background-position: -398px center;
+	}
+}
